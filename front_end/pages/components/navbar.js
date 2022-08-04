@@ -15,6 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import Image from 'next/image'
 import Logo from '../../public/logo.png'
 import Link from 'next/link'
+import { Grid } from '@mui/material';
 
 
 const settings = ['Profile', 'Account', 'Logout'];
@@ -39,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" color="transparent" elevation={0} sx={{ mt:5 }}>
+    <AppBar position="static" color="secondary" elevation={0}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
         <Image
@@ -120,9 +121,12 @@ const Navbar = () => {
            EFF
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-
-            <Link href='/coaches/coaches_form'><Button>Coaches</Button></Link>
-            <Link href='/instractors/instractors_form'><Button>Instractors</Button></Link>
+            <Grid item xs={12}>
+            <Link href='/coaches/coaches_form'><Button style={{color: "#fff"}}>Coaches</Button></Link>
+            </Grid>
+            <Grid item xs={12}>
+            <Link href='/instractors/instractors_form'><Button style={{color: "#fff"}}>Instractors</Button></Link>
+            </Grid>
           
           </Box>
 
