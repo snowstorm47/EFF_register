@@ -97,8 +97,8 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none', align:'center' },
               }}
             >
-                <MenuItem>Coaches</MenuItem>
-                <MenuItem>Instractors</MenuItem>
+                <MenuItem> <Link href='/coaches/coaches_form'><Button style={{color: "#000"}}>Coaches</Button></Link></MenuItem>
+                <MenuItem>  <Link href='/instractors/instractors_form'><Button style={{color: "#000"}}>Instractors</Button></Link></MenuItem>
 
             </Menu>
           </Box>

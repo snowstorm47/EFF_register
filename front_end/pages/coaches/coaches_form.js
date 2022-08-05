@@ -8,6 +8,9 @@ import{ MenuItem }from "@mui/material";
 import {Select} from "@mui/material";
 import{ FormControl} from "@mui/material";
 import{ InputLabel} from "@mui/material";
+import { Box } from "@mui/material";
+import { Button } from "@mui/material";
+import Link from "next/link";
 import UploadFile from "../components/uploadfile";
 
 const Coachesform = () => {
@@ -325,6 +328,16 @@ name="row-radio-buttons-group"
           rows={3}
         />
       </Grid>
+
+    
+            <Grid item xs={12}>
+            <Link href='/coaches/coaches_data'><Button  variant="contained">Submit</Button></Link>
+            </Grid>
+            <Grid item xs={12}>
+            <Link href='/coaches/coaches_form'><Button   variant="contained">Cancle</Button></Link>
+            </Grid>
+          
+     
 
 </Grid>
 
